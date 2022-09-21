@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
+import { IoIosCalendar, IoIosFlag, IoMdPlanet } from 'react-icons/io';
 
 class MissionCard extends React.Component {
   render() {
@@ -7,10 +8,19 @@ class MissionCard extends React.Component {
     return (
       <section>
         <div data-testid="mission-card" />
-        <p data-testid="mission-name">{ name }</p>
-        <p data-testid="mission-year">{year }</p>
-        <p data-testid="mission-country">{ country }</p>
-        <p data-testid="mission-destination">{ destination }</p>
+        <p data-testid="mission-name" className="mission-name">{ name }</p>
+        <p data-testid="mission-year">
+          <IoIosCalendar className="icon" />
+          { year }
+        </p>
+        <p data-testid="mission-country">
+          <IoIosFlag className="icon" />
+          { country }
+        </p>
+        <p data-testid="mission-destination">
+          <IoMdPlanet className="icon" />
+          { destination }
+        </p>
       </section>
     );
   }

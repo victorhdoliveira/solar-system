@@ -1,3 +1,80 @@
-.App {
+body {
+  background-image: url('https://images.unsplash.com/photo-1585064968223-0b5b997a29fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1452&q=80');
+  color: whitesmoke;
+  opacity: 0.9;
+}
+
+h1 {
+  color: rgba(255, 238, 0, 0.856);
+  display: flex;
+  font-family: monospace;
+  font-size: 60px;
+  font-weight: 100;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.planetSection h2 {
+  display: none;
+}
+
+.missionSection h2 {
+  display: flex;
+  font-family: system-ui;
+  font-size: 40px;
+  font-weight: 100;
+  justify-content: center;
+  margin: 50px;
+}
+
+.planets {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+
+.planets p {
+  align-items: flex-end;
+  display: flex;
+  opacity: 0.75;
+}
+
+.planets img {
+  height: 7.5%;
+  padding: 5px;
+  width: 7.5%;
+}
+
+.planets img:hover {
+  width: 10%;
+}
+
+.missions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.icon {
+  margin-right: 5px;
+}
+
+.missions section {
+  background-color: black;
+  border: solid #7886d6 1px;
+  border-radius: 2%;
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  margin: 10px;
+  opacity: 0.85;
+  padding: 5px;
   text-align: center;
+  width: 150px;
+}
+
+.missions section .mission-name {
+  font-size: x-large;
+  font-weight: 700;
 }

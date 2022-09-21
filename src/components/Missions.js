@@ -6,10 +6,10 @@ import Title from './Title';
 class Missions extends React.Component {
   render() {
     return (
-      <section>
+      <section className="missionSection">
         <div data-testid="missions" />
         <Title headline="Missões" />
-        <ul>
+        <div className="missions">
           { Mission.map((mission) => (
             <MissionCard
               key={ mission.name }
@@ -19,7 +19,7 @@ class Missions extends React.Component {
               destination={ mission.destination }
             />
           ))}
-        </ul>
+        </div>
       </section>
     );
   }

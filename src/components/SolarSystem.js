@@ -6,10 +6,10 @@ import Title from './Title';
 class SolarSystem extends React.Component {
   render() {
     return (
-      <section>
+      <section className="planetSection">
         <div data-testid="solar-system" />
         <Title headline="Planetas" />
-        <ul>
+        <ul className="planets">
           { Planets.map((planet) => (
             <PlanetCard
               key={ planet.name }
