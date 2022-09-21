@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 
 class PlanetCard extends React.Component {
@@ -6,7 +7,7 @@ class PlanetCard extends React.Component {
     return (
       <>
         <div data-testid="planet-card" />
-        <p>
+        <p data-testid="planet-name">
           { planetName }
         </p>
         <img src={ planetImage } alt={ `Planeta ${planetName}` } />
@@ -14,5 +15,10 @@ class PlanetCard extends React.Component {
     );
   }
 }
+
+PlanetCard.propTypes = {
+  planetName: PropTypes.string,
+  planetImage: PropTypes.string,
+}.isRequired;
 
 export default PlanetCard;
