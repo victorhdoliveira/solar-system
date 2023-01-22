@@ -89,6 +89,7 @@ span {
 
 .missions section:hover {
   background-color: black;
+  border: solid #00cdf1 1px;
   opacity: 1;
 }
 
